@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Monitoramento do Paciente',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        fontFamily: 'Roboto', // ou a fonte padrão do seu sistema
+        fontFamily: 'Roboto',
         scaffoldBackgroundColor: const Color(0xFFF5F7FA),
       ),
       home: const MainNavigationPage(),
