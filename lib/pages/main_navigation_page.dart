@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'patient_dashboard_page.dart';
 import 'profile_page.dart';
+import 'progress_tab_view.dart'; // 1. Adicionamos a importação da nova tela aqui!
 
 class MainNavigationPage extends StatefulWidget {
   const MainNavigationPage({super.key});
@@ -15,7 +16,7 @@ class _MainNavigationPageState extends State<MainNavigationPage> {
   final List<Widget> _pages = [
     const PatientDashboardPage(),
     const _DummyPage(title: 'Página de Sessões'),
-    const _DummyPage(title: 'Página de Progresso'),
+    const ProgressTabView(), 
     const ProfilePage(),
   ];
 
