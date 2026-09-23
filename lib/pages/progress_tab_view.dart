@@ -187,7 +187,7 @@ class ProgressTabView extends StatelessWidget {
                       endAngle: 6.28, // 2 * Pi
                       colors: [Colors.blue, Colors.greenAccent],
                       stops: [0.0, 1.0],
-                      transform: GradientRotation(-1.57), // Rotaciona para começar no topo
+                      transform: GradientRotation(-1.57),
                     ).createShader(bounds);
                   },
                   child: const CircularProgressIndicator(
@@ -198,7 +198,6 @@ class ProgressTabView extends StatelessWidget {
                     strokeCap: StrokeCap.round,
                   ),
                 ),
-                // Textos no centro do círculo
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -253,7 +252,6 @@ class ProgressTabView extends StatelessWidget {
           const SizedBox(height: 32),
           Divider(color: Colors.grey.shade200, height: 1),
           const SizedBox(height: 24),
-          // Linha de Estatísticas Inferior
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
